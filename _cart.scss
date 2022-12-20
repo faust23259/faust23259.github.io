@@ -1,0 +1,300 @@
+@keyframes SlideHomeWork {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+        transform: scale(1);
+        background-color: #FFFFFF;
+    }
+
+    100% {
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+        transform: scale(1.1);
+        background-color: #000000;
+        color: #F7F6F6;
+    }
+}
+
+.cart__top {
+    height: 400px;
+    background-image: url(img/cart_top.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .heading__big {
+        margin-top: 127px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 70px;
+        color: #FFFFFF;
+    }
+}
+
+.cart {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(71px, 12fr));
+
+    &__name {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        align-items: center;
+        padding-bottom: 14px;
+    }
+
+    &__img {
+        display: block;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 25px;
+        border-top: 0.5px solid #CACDD8;
+        padding-bottom: 32px;
+    }
+
+    &__left {
+        gap: 31px;
+        display: flex;
+    }
+
+    &__info-block {
+        width: 276px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__info-title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+    }
+
+    &__info-text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #888888;
+    }
+
+    &__info-price {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #050505;
+    }
+
+    &__link {
+        display: flex;
+        gap: 30px;
+    }
+
+    &__link-text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 210%;
+        align-items: center;
+        text-align: center;
+        text-decoration-line: underline;
+        color: #000000;
+    }
+
+    &__content {
+        grid-column: span 8;
+        margin-right: 33px;
+    }
+
+    &__right {
+        border-radius: 6px;
+
+
+        &-input {
+            width: 71px;
+            height: 51px;
+            border: none;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 210%;
+            text-align: center;
+            color: #000000;
+            background: #F7F6F6;
+            border-radius: 6px;
+
+            &::placeholder {
+                width: 47px;
+                height: 27px;
+            }
+
+            &::-webkit-inner-spin-button {
+                opacity: 1;
+            }
+
+
+            &:hover,
+            :focus,
+            :active {
+                outline: none;
+            }
+        }
+    }
+
+    &__form {
+        grid-column: span 4;
+        margin-top: 64px;
+        height: 556px;
+        background: #F7F6F6;
+        border-radius: 20px;
+    }
+
+    &__name {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 64px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        align-items: center;
+        padding-bottom: 14px;
+    }
+
+    &__form-heading {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+        align-items: center;
+        text-align: center;
+        color: #000000;
+        padding-bottom: 35px;
+        padding-top: 42px;
+    }
+
+    &__form-main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__form-input {
+        width: 288px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        display: flex;
+        align-items: center;
+        color: #000000;
+        border: none;
+        background-color: #F7F6F6;
+        border-bottom: 1px solid #CACDD8;
+        margin-bottom: 41px;
+        margin-left: 42px;
+
+        &:hover,
+        :focus,
+        :active {
+            outline: none;
+        }
+
+        &::placeholder {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            align-items: center;
+            color: #000000;
+        }
+    }
+
+    &__form-result {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        align-items: center;
+        text-align: center;
+        color: #000000;
+        margin-top: 43px;
+    }
+
+    &__form-button-main {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__form-button {
+        width: 290px;
+        height: 41px;
+        border: 1px solid #000000;
+        border-radius: 50px;
+        margin-top: 18px;
+        background-color: #FFFFFF;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        color: #000000;
+        transition: .7s;
+        animation: SlideHomeWork 2s ease-out 0s infinite alternate forwards;
+
+
+
+        // &:hover {
+        //     background: #000000;
+        //     border: 1px solid #FFFFFF;
+        //     border-radius: 20px;
+        //     font-style: normal;
+        //     font-weight: 500;
+        //     font-size: 16px;
+        //     line-height: 20px;
+        //     color: #FFFFFF;
+        // }
+    }
+
+
+}
+
+.button {
+    display: flex;
+    gap: 7px;
+
+    &__cart {
+        box-sizing: border-box;
+        width: 200px;
+        height: 37px;
+        border: 1px solid #000000;
+        background-color: #FFFFFF;
+        border-radius: 50px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: #020202;
+        transition: .5s;
+
+        &:hover {
+            background: #000000;
+            border: 1px solid #FFFFFF;
+            border-radius: 20px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            color: #FFFFFF;
+        }
+    }
+}
